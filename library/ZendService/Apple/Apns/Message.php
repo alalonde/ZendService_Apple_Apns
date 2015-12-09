@@ -225,6 +225,8 @@ class Message
             throw new Exception\InvalidArgumentException('Badge must be null or an integer');
         }
         $this->badge = $badge;
+
+        return $this;
     }
 
     /**

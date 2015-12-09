@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file, in reverse chronological order by release.
 
-## 1.1.2 - TBD
+## 1.2.1 - TBD
 
 ### Added
 
@@ -19,6 +19,47 @@ All notable changes to this project will be documented in this file, in reverse 
 ### Fixed
 
 - Nothing.
+
+## 1.2.0 - 2015-12-09
+
+### Added
+
+- [#36](https://github.com/zendframework/ZendService_Apple_Apns/pull/36)
+  Conection failures now raise a ```RuntimeException``` to allow you to catch
+  stream_socket_client(): SSL: Connection reset by peer warnings.
+- [#39](https://github.com/zendframework/ZendService_Apple_Apns/pull/39) Add
+  safari push support
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- Nothing.
+
+## 1.1.2 - 2015-12-09
+
+### Added
+
+- Nothing.
+
+### Deprecated
+
+- Nothing.
+
+### Removed
+
+- Nothing.
+
+### Fixed
+
+- [#40](https://github.com/zendframework/ZendService_Apple_Apns/pull/40) Add
+  missing return $this
 
 ## 1.1.1 - 2015-10-13
 
