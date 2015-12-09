@@ -174,6 +174,14 @@ class MessageTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($urlArgs, $this->message->getUrlArgs());
     }
 
+    public function testSetUrlArgsInCorrectPayload() 
+    {
+        $urlArgs = array('path/to/somewhere');
+        $this->message->setUrlArgs($urlArgs);
+        $payload = $this->message->getPayload();
+        $this->assertEquals($urlArgs, $payload['aps']['url-args']);
+    }
+
     public function testSetCustomData()
     {
         $data = array('key' => 'val', 'key2' => array(1, 2, 3, 4, 5));
